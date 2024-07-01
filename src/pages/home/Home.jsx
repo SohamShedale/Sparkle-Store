@@ -1,10 +1,12 @@
-import { useContext } from "react";
+import HeroSection from "../../components/hero-section/HeroSection";
 import Layout from "../../components/layout/Layout";
-import myContext from "../../context/data/myContext";
 
 const Home = () => {
-  const data = useContext(myContext);
-  return <Layout>{}</Layout>;
+  return (
+    <Layout>
+      <HeroSection/>
+    </Layout>
+  );
 };
 
 export default Home;
