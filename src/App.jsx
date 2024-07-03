@@ -8,6 +8,8 @@ import MyState from "./context/data/myState";
 import Login from "./pages/registration/Login";
 import Signup from "./pages/registration/Signup";
 import ProductInfo from "./pages/productInfo/ProductInfo";
+import AddProduct from "./pages/admin/pages/AddProduct";
+import UpdateProduct from "./pages/admin/pages/UpdateProduct";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/*" element={<NoPage />} />
+          <Route path="/addproduct" element={<AddProduct/>} />
+          <Route path="/updateproduct" element={<UpdateProduct/>} />
         </Routes>
       </Router>
     </MyState>
