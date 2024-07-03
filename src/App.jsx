@@ -21,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/productinfo/:id" element={<ProductInfo />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/*" element={<NoPage />} />
         </Routes>
       </Router>
