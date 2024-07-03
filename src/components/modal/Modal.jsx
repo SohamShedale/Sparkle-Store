@@ -18,7 +18,7 @@ export default function Modal() {
         <button
           type="button"
           onClick={openModal}
-          className="w-full  bg-violet-600 py-2 text-center rounded-lg text-white font-bold bg-green-600"
+          className="w-full py-2 text-center rounded-lg text-white font-bold bg-green-600"
         >
           Buy Now
         </button>
@@ -49,7 +49,7 @@ export default function Modal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl p-2 text-left align-middle shadow-xl transition-all bg-gray-50 mt-28">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl p-2 text-left align-middle shadow-xl transition-all bg-gray-50 mt-">
                   <section className="">
                     <div className="flex flex-col items-center justify-center py-8 mx-auto  lg:py-0">
                       <div className="w-full  rounded-lg md:mt-0 sm:max-w-md xl:p-0 ">
