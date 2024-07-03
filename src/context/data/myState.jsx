@@ -8,14 +8,6 @@ const myState = ({children}) => {
     let changedTheme = mode == 'light' ? 'dark' : 'light'
     setMode(changedTheme) 
     document.body.style.backgroundColor = changedTheme == 'light' ? '#ffffff' : "rgb(17,24,39)";
-    // if(mode == 'light'){
-    //   setMode('dark')
-    //   document.body.style.backgroundColor = "rgb(17,24,39)";
-    // }
-    // else{
-    //   setMode('light')
-    //   document.body.style.backgroundColor = "#ffffff";
-    // }
   }
 
   return (
