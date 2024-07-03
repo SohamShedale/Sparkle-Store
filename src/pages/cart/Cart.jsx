@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import myContext from "../../context/data/myContext";
 import Layout from "../../components/layout/Layout";
+import Modal from "../../components/modal/Modal";
 
 function Cart() {
   const context = useContext(myContext);
@@ -9,7 +10,7 @@ function Cart() {
   return (
     <Layout>
       <div
-        className="h-screen bg-gray-100 pt-5 "
+        className="h-screen bg-gray-100 pt-28  "
         style={{
           backgroundColor: mode === "dark" ? "#282c34" : "",
           color: mode === "dark" ? "white" : "",
@@ -123,13 +124,7 @@ function Cart() {
                 </p>
               </div>
             </div>
-            {/* <Modal  /> */}
-            <button
-              type="button"
-              className="w-full  bg-violet-600 py-2 text-center rounded-lg text-white font-bold "
-            >
-              Buy Now
-            </button>
+            <Modal />
           </div>
         </div>
       </div>
