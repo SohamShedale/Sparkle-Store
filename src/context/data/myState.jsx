@@ -3,6 +3,7 @@ import MyContext from "./myContext"
 
 const myState = ({children}) => {
   const [mode, setMode] = useState('light')
+  const [loading, setLoading] = useState(false);
 
   const toggleMode = () => {
     let changedTheme = mode == 'light' ? 'dark' : 'light'
@@ -11,7 +12,7 @@ const myState = ({children}) => {
   }
 
   return (
-    <MyContext.Provider value={{mode,toggleMode}}>
+    <MyContext.Provider value={{mode, toggleMode, loading, setLoading}}>
       {children}
     </MyContext.Provider>
   )
