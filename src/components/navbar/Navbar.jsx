@@ -106,15 +106,23 @@ const Navbar = () => {
                   {user ? (
                     <div className="flow-root">
                       <a
-                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer  "
-                        style={{ color: mode === "dark" ? "white" : "" }}
                         onClick={logout}
+                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
+                        style={{ color: mode === "dark" ? "white" : "" }}
                       >
                         Logout
                       </a>
                     </div>
                   ) : (
-                    ""
+                    <div className="flow-root">
+                      <Link
+                        to={"/login"}
+                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
+                        style={{ color: mode === "dark" ? "white" : "" }}
+                      >
+                        Login
+                      </Link>
+                    </div>
                   )}
 
                   <div className="flow-root">
@@ -126,7 +134,7 @@ const Navbar = () => {
                         className="inline-block w-10 h-10 rounded-full"
                         src="https://github.com/gaearon.png"
                         alt="Dan_Abromov"
-                      />{" "}
+                      />
                     </Link>
                   </div>
                 </div>
@@ -233,8 +241,15 @@ const Navbar = () => {
                       Order
                     </Link>
                   ) : (
-                    ""
+                    <Link
+                      to={"/login"}
+                      className="text-sm font-medium text-gray-700 "
+                      style={{ color: mode === "dark" ? "white" : "" }}
+                    >
+                      Login
+                    </Link>
                   )}
+
                   {user?.user?.email === "shedalesoham@gmail.com" ? (
                     <Link
                       to={"/dashboard"}
